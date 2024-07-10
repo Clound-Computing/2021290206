@@ -57,13 +57,12 @@ To evaluate the impact of each component, modify the import statement in the tra
    ```bash
    python train_exp_fc5_RAWFC.py
 2. **Evaluation**: Use the corresponding evaluation script for the dataset you are working with. For example:
- ```bash
-python eval_exp_fc5_rawfc.py
-
+    ```bash
+    python eval_exp_fc5_rawfc.py
 3. **Model Variants**: To evaluate the impact of each component, modify the import statement in the training script. For example, to train the model without the RS module:
-```python
-# In train_exp_fc5_RAWFC.py
-import model_exp_fc5_remove_RS as model_exp_fc5
+      ```python
+      # In train_exp_fc5_RAWFC.py
+      import model_exp_fc5_remove_RS as model_exp_fc5
 
 ### Preprocessing
 For GossipCop-LLM, we used the v3 version after preprocessing for further processing. The preprocessing steps ensured that the instances are in proper length and filtered out irrelevant data.
